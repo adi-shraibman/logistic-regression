@@ -5,7 +5,7 @@ regularization and polynomial features, with exercises all the way.
 
 ## 🌐 Read it online
 
-**https://YOUR-USERNAME.github.io/logistic-regression/**
+**https://adi-shraibman.github.io/logistic-regression/**
 
 Each notebook is also a web page, with interactive figures. Use **Next / Previous** or the arrow keys.
 
@@ -14,7 +14,7 @@ Each notebook is also a web page, with interactive figures. Use **Next / Previou
 Choose one:
 
 - **Easiest:** on this page, click the green **Code** button → **Download ZIP**, and unzip it.
-- **With git:** `git clone https://github.com/YOUR-USERNAME/logistic-regression.git`
+- **With git:** `git clone https://github.com/adi-shraibman/logistic-regression.git`
   Later, run `git pull` inside the folder to get new material.
 
 Then follow [SETUP.md](SETUP.md) to install Python and open the notebooks in Jupyter.
