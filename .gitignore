@@ -1,0 +1,18 @@
+# Safety net: these must never be published, even if they're copied in by mistake.
+*_solution*.ipynb
+*solution*
+*_original.ipynb
+hw_rubric.md
+*rubric*
+_build/
+specifications*.md
+experiments/
+
+# Jupyter and Python leftovers
+.ipynb_checkpoints/
+__pycache__/
+
+# Windows / OneDrive / Office leftovers
+desktop.ini
+Thumbs.db
+~$*
