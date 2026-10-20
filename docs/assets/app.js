@@ -56,9 +56,15 @@
           navigator.clipboard && navigator.clipboard.writeText(text);
           toggle.textContent = "copied"; setTimeout(() => (toggle.textContent = "copy"), 1200);
         };
+        if (b.sol) { wrap.classList.add("sol"); wrap.appendChild(el("div", "sol-label", "✓ Solution")); }
         wrap.appendChild(toggle);
         wrap.appendChild(el("pre", "code", b.html));
         page.appendChild(wrap);
+      } else if (b.t === "answer") {
+        const box = el("div", "answer");
+        box.appendChild(el("div", "answer-label", "✓ Answer"));
+        box.appendChild(el("div", "md", renderMarkdown(b.text)));
+        page.appendChild(box);
       } else if (b.t === "out") {
         page.appendChild(el("pre", "output", escapeHtml(b.text)));
       } else if (b.t === "html") {

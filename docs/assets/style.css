@@ -10,6 +10,8 @@
   --accent-soft: #e8f0fe;
   --code-bg: #f6f8fa;
   --out-bg: #fdfcf8;
+  --ok: #1a7f37;
+  --ok-soft: #e9f6ec;
   --sidebar-w: 290px;
 }
 @media (prefers-color-scheme: dark) {
@@ -24,6 +26,8 @@
     --accent-soft: #1d2a3b;
     --code-bg: #f3f5f7;
     --out-bg: #1f242b;
+    --ok: #3fb950;
+    --ok-soft: #17291d;
   }
 }
 * { box-sizing: border-box; }
@@ -147,3 +151,18 @@ table.cm th { background: var(--accent-soft); font-weight: 600; }
   .topbar .nb-title { display: none; }
   .md h1 { font-size: 1.6em; }
 }
+
+/* ---------- answers pages ---------- */
+.answers-view .topbar { border-bottom: 3px solid var(--ok); }
+.answers-view .topbar .nb-title { color: var(--ok); font-weight: 600; }
+.topbar .dl.ans, .nb-meta a.ans { color: var(--ok); }
+.topbar .dl.ans { border-color: var(--ok); font-weight: 600; }
+.cell.sol pre.code { border-left-color: var(--ok); }
+.sol-label, .answer-label {
+  display: inline-block; font: 600 11.5px system-ui, sans-serif; letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--ok); margin-bottom: 4px;
+}
+.answer { margin: 10px 0 16px; padding: 10px 16px; background: var(--ok-soft); border-left: 4px solid var(--ok);
+  border-radius: 0 6px 6px 0; }
+.answer .md > :first-child { margin-top: 0.2em; }
+.answer .md > :last-child { margin-bottom: 0.2em; }
